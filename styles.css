@@ -47,6 +47,21 @@
     text-decoration: none;
     color: #3C354F;
 }
+.follow-us-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #a8a4b2;
+    color: #3C354F;
+    padding: 6px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.social-icon {
+    width: 23px;
+    height: 20px;
+    margin-left: 10px;
+}
 
 /*text related styles*/
 .highlight-1{
@@ -68,37 +83,36 @@
 }
 .highlight-4{
     background: linear-gradient(180deg, #8758F1, #F948B2 0%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-text-align: right;
-font-family: Work Sans;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 60px; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; 
 }
 .section-title{
     color: #0B0223;
-text-align: centre;
-font-family: Work Sans;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    text-align: centre;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 .section-text{
     color: #534C64;
-text-align: center;
-font-family: Work Sans;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 /*banner related styles*/
-
 .banner {
     position: relative;
     overflow: hidden;
@@ -111,8 +125,6 @@ line-height: 30px;
     height: 700px;
     float: left;
 }
-
-
 .bannar-pic:last-child {
     float: right;
 }
@@ -174,6 +186,7 @@ line-height: 30px;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
+    cursor: pointer;
 }
 .btn-secondary{
     display: inline-flex;
@@ -187,6 +200,7 @@ line-height: 30px;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
+     cursor: pointer;
 }
 
 /*Online Games section related styles*/
@@ -205,6 +219,7 @@ line-height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .thumbnail img {
@@ -217,7 +232,51 @@ line-height: 30px;
     text-align: center;
     width: 320px; 
 }
-/*---------------------*/
+
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 245px;
+    height: 300px;
+    margin-left: 37px;
+    border-radius: 7px;
+}
+
+.thumbnail:hover .hover-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hover-content img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.watch-now {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FF42A5;
+}
+/*Play instant related styels*/
 .play-instant {
     display: flex;
     align-items: center;
@@ -266,8 +325,9 @@ line-height: 30px;
     font-style: normal;
     font-weight: 600;
     text-decoration: none;
-    border: 2px solid #FF42A5;
     width: calc(20% - 40px);
+    transition: border-color 0.3s, color;
+    border-width: 0; 
 }
 
 
@@ -276,8 +336,13 @@ line-height: 30px;
     height: 60px;
     margin-right: 10px;
 }
+.icon-button:hover {
+    border-color: #FF42A5; 
+    color: #FF42A5; 
+    cursor: pointer; 
+    border-width: 1px; 
+}
 
-/*Social media buttons related styles*/
 .social-btn-icon{
     width: 40px;
     height: 35px;
