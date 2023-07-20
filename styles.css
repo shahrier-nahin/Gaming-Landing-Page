@@ -114,12 +114,15 @@
 
 /*banner related styles*/
 .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
     height: 700px;
-    width: 1920px;
+    width: 100%;
 }
-
 .bannar-pic {
     width: 700px;
     height: 700px;
@@ -132,11 +135,12 @@
 .banner-content {
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: left; 
-    color: #000; 
-    z-index: 1; 
+    text-align: left;
+    color: #000;
+    z-index: 1;
+    width:1200px;
 }
 
 .banner-heading {
@@ -147,30 +151,22 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-transform: uppercase;
 }
 
 .banner-title {
     margin-top: -30px;
     margin-bottom: 10px;
-    font-family: Work Sans;
-    font-size: 95px;
-    font-style: normal;
+    font-size: 60px;
     font-weight: 800;
-    line-height: normal;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .banner-text {
     font-size: 20px;
     font-weight: 500;
-    line-height: normal;
     text-transform: lowercase;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    width: 100%; 
 }
 
 /*buttons related styles*/
@@ -287,7 +283,15 @@
 .play-instant-content {
     width: 350px;
     margin-right: 60px; 
-    
+    text-align: right;
+    margin-right: 170px;
+}
+.play-instant-txt{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
 }
 .feature-img{
     position: absolute;
