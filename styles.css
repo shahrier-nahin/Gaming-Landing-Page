@@ -487,7 +487,7 @@
     /* Buttons container styles */
     .buttons {
         flex-direction: row;
-        justify-content: center; /* Center the buttons horizontally */
+        justify-content: center;
         width: 100%;
         flex-wrap: wrap;
       }
