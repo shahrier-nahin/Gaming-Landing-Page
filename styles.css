@@ -486,15 +486,18 @@
   
     /* Buttons container styles */
     .buttons {
-      justify-content: center;
-      width: 1rem; 
-      flex-direction: column;
-
-    }
-  
-    .icon-button {
-      width: calc(33.33% - 2.5rem);
-    }
+        flex-direction: row;
+        justify-content: center; /* Center the buttons horizontally */
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    
+      .icon-button {
+        width: calc(33.33% - 20px);
+        margin: 5px; 
+        font-size: 14px; 
+        padding: 8px 14px; 
+      }
   
     /* Footer container styles */
     .footer {
