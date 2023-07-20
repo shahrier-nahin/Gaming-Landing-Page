@@ -46,6 +46,7 @@
 .nav-links li a {
     text-decoration: none;
     color: #3C354F;
+    display: flex;
 }
 .follow-us-button {
     display: inline-flex;
@@ -419,3 +420,89 @@
     margin: 10px 0;
     padding-left: 125px;
 }
+
+/* For Android version (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Navbar styles */
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: 3.5rem; 
+    }
+  
+    .nav-logo img {
+      margin-left: 0;
+    }
+  
+    .nav-links {
+      margin-top: 1rem; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0; 
+    }
+  
+    /* Banner styles */
+    .banner {
+      margin-top: 4rem;
+      flex-direction: column;
+    }
+    
+    .banner-content {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      padding-left: 1rem; 
+    }
+  
+    .bannar-pic {
+      width: 100%;
+      height: auto;
+      float: none;
+      justify-content: space-between;
+    }
+  
+    /* Online Games section styles */
+    .thumbnails {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Play instant section styles */
+    .play-instant {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .play-instant-content {
+      margin-right: 0;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 1.25rem; 
+    }
+  
+    /* Buttons container styles */
+    .buttons {
+      justify-content: center;
+      width: 2.5rem; 
+    }
+  
+    .icon-button {
+      width: calc(33.33% - 2.5rem);
+    }
+  
+    /* Footer container styles */
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .footer li {
+      margin-bottom: 0.625rem; 
+    }
+  }
+  
